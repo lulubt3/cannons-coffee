@@ -1,3 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --black: #000000;
+  --catalina: #06327d;
+  --bluetiful: #2b70e4;
+  --vegan: #209d5c;
+  --sunglow: #ffd034;
+  --white: #ffffff;
+  --light-blue: #cadbf8;
+  --font: "Montserrat", sans-serif;
+  --line-height: 1.1667;
+  --bold-font: 300;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -9,6 +24,110 @@ html {
 }
 
 body {
-  color: black;
-  background-color: #063270;
+  color: var(--black);
+  background-color: var(--catalina);
+  font-family: (var(--font));
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  border-bottom: 0.25rem solid var(--sunglow);
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 1rem;
+}
+
+header img {
+  padding: 0.5rem;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: var(--line-height);
+  font-weight: var(--bold-font);
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--white);
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  /* margin: 0 auto; */
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--white);
+  padding: 0.5rem;
+}
+
+ul {
+  margin: 0 auto;
+  padding-inline-start: 0%;
+  /* padding: 1rem; */
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: var(--line-height);
+  font-weight: var(--bold-font);
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.75rem;
+  line-height: var(--line-height);
+  font-weight: var(--bold-font);
+}
+
+.hero-button {
+  background-color: var(--vegan);
+  color: var(--white);
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.card-button {
+  background-color: var(--catalina);
+  color: var(--bluetiful);
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+@media (min-width: 650px) {
+  .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+  }
+}
+
+@media (min-width: 921px) {
+  header {
+    align-items: end;
+    justify-content: space-between;
+  }
+  h1 {
+    font-size: 2.75rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  header {
+    align-items: end;
+    justify-content: space-between;
+  }
 }
