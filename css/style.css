@@ -26,7 +26,7 @@ html {
 body {
   color: var(--black);
   background-color: var(--catalina);
-  font-family: (var(--font));
+  font-family: var(--font);
   font-size: 1.125rem;
   line-height: 1.5;
   margin: 0 auto;
@@ -98,6 +98,8 @@ h3 {
   color: var(--white);
   border-radius: 10px;
   text-decoration: none;
+  padding: .5rem;
+  text-transform: uppercase;
 }
 
 .card-button {
@@ -107,11 +109,39 @@ h3 {
   text-decoration: none;
 }
 
+.hero {
+    background-color: var(--white);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    /* padding-top: 2rem; */
+}
+
+.hero-img {
+    max-width: 80%;
+}
+
+.hero-content {
+    max-width: 80%;
+    justify-content: center;
+    padding: 1rem;
+}
+
 @media (min-width: 650px) {
   .logo {
     display: flex;
     flex-direction: row;
     align-items: end;
+  }
+  .hero {
+    display: flex;
+    flex-flow: row; 
+    padding: 0;
+  }
+  .hero-img {
+    max-width: 50%;
   }
 }
 
