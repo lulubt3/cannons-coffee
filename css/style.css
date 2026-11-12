@@ -160,6 +160,15 @@ h3 {
     max-width: 100%;
 }
 
+footer {
+    color: var(--white);
+    border-top: 0.25rem solid var(--sunglow);
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+}
+
 @media (min-width: 650px) {
   .logo {
     display: flex;
