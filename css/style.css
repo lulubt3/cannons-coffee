@@ -38,6 +38,7 @@ body {
 }
 
 header {
+    background-color: var(--catalina);
   border-bottom: 0.25rem solid var(--sunglow);
   text-align: center;
   display: flex;
@@ -85,12 +86,14 @@ h2 {
   line-height: var(--line-height);
   font-weight: var(--bold-font);
   text-transform: uppercase;
+  /* text-align: left; */
 }
 
 h3 {
   font-size: 1.75rem;
   line-height: var(--line-height);
   font-weight: var(--bold-font);
+  font-weight: bolder;
 }
 
 .hero-button {
@@ -104,9 +107,11 @@ h3 {
 
 .card-button {
   background-color: var(--catalina);
-  color: var(--bluetiful);
+  color: var(--white);
   border-radius: 10px;
   text-decoration: none;
+  padding: .5rem;
+  text-transform: uppercase;
 }
 
 .hero {
@@ -129,6 +134,32 @@ h3 {
     padding: 1rem;
 }
 
+.coffees {
+    background-color: var(--light-blue);
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    padding: 2rem;
+}
+
+.coffee-cards {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    padding-top: 2rem;
+    gap: 2rem;
+}
+
+.card {
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.card-img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
 @media (min-width: 650px) {
   .logo {
     display: flex;
@@ -143,6 +174,15 @@ h3 {
   .hero-img {
     max-width: 50%;
   }
+  .card {
+    width: 45%;
+  }
+  .coffee-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-around;
+  }
 }
 
 @media (min-width: 921px) {
@@ -153,11 +193,15 @@ h3 {
   h1 {
     font-size: 2.75rem;
   }
+
 }
 
 @media (min-width: 1000px) {
   header {
     align-items: end;
     justify-content: space-between;
+  }
+  .card {
+    width: 23%;
   }
 }
